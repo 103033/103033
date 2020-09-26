@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const token = 'NzU5MzcwODk4Nzc1NzM2MzIw.X28hQg.WJfkxSMii271hnl9KYNSLNn30Wo';
+const token = process.argv.length == 2 ? process.env.token : "";
 const moment = require("moment");
 require("moment-duration-format");
 const momenttz = require('moment-timezone');
